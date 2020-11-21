@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/proofText"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto de prueba"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="2dp"/>
+    <SeekBar
+        android:id="@+id/spinnerTextSize"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:min="20"
+        android:progress="1"
+        android:padding="2dp"/>
+    <Spinner
+        android:id="@+id/spinnerTheme"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/theme"
+        android:padding="2dp"/>
+    <Spinner
+        android:id="@+id/spinnerTextFont"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/textFont"
+        android:padding="2dp"/>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnChangeColor"
+        android:text="Cambiar color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"/>
+</LinearLayout>
